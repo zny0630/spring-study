@@ -12,5 +12,6 @@ public class Application {
         ApplicationContext context =new ClassPathXmlApplicationContext("spring.xml");
         MessagePrinter printer=context.getBean(MessagePrinter.class);
         printer.pinterMessage();
+
     }
 }
