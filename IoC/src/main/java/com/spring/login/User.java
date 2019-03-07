@@ -3,7 +3,7 @@ package com.spring.login;
 /**
  * Created by ASUS on 2019/3/4.
  */
-public class User {
+public class  User {
     private String account;
     private String password;
 
