@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../jianshu" />
     <file type="web" url="file://$PROJECT_DIR$/IoC" />
     <type id="Spring" />
   </component>
@@ -10,6 +11,7 @@
         <option value="$PROJECT_DIR$/quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/IoC/pom.xml" />
         <option value="$PROJECT_DIR$/aop/pom.xml" />
+        <option value="$PROJECT_DIR$/../jianshu/pom.xml" />
       </list>
     </option>
   </component>
