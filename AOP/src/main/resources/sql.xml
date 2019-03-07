@@ -6,7 +6,16 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/aop
        http://www.springframework.org/schema/aop/spring-aop.xsd">
-
+   <!--Bean 定义-->
+    <!--<bean id="userDao" class="com.spring.quickstart.UserDaoImpl"/>-->
+    <!--<bean id="advice" class="com.spring.quickstart.BeforeAdvice"/>-->
+     <!--使用aop的专用标签来完成相关的配置-->
+    <!--<aop:config>-->
+        <!--<aop:aspect id="before" ref="advice">-->
+            <!--<aop:pointcut id="myPointCut" expression="execution(* com.spring.quickstart.*.*(..))"/>-->
+            <!--<aop:before method="beforeMethod" pointcut-ref="myPointCut"/>-->
+        <!--</aop:aspect>-->
+    <!--</aop:config>-->
     <bean id="userDao" class="com.spring.quickstart.UserDaoImpl"/>
     <bean id="advice" class="com.spring.quickstart.BeforeAdvice"/>
     <aop:config>
@@ -15,4 +24,6 @@
             <aop:before method="beforeMethod" pointcut-ref="myPointCut"/>
         </aop:aspect>
     </aop:config>
+
+
 </beans>
